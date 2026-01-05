@@ -68,7 +68,7 @@ public class TerminalOps {
 	    // example: counting occurrence of characters  // traditional method
 	    String sentence = "Hello world";
 	    int count = 0;
-	    for(int i = 0; i< sentence.length(); i++) {
+	    for(int i = 0; i < sentence.length(); i++) {
 	    	if(sentence.charAt(i) == 'l') {
 	    		count++;
 	    	}
@@ -82,7 +82,7 @@ public class TerminalOps {
 	    // stream can't be reused after a terminal operation has been called.
 	    Stream<String> stream = names.stream();
 	    stream.forEach(System.out :: println);     // forEach is a terminal operation
-//	    List<String> list2 = stream.map(String :: toUpperCase).toList();   // exception
+        //List<String> list2 = stream.map(String :: toUpperCase).toList();   // exception
  
    
 	}

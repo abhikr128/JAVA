@@ -1,4 +1,4 @@
-package Stream_Exercise;
+package stream_exercise;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -10,7 +10,7 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 
-public class practiseStreams {
+public class PractiseStreams1 {
 	public static void main(String[] args) {
 		// Q.no 1. Count elements in a list
 		List<Integer> list = Arrays.asList(3, 5, 6, 8, 9, 10);
@@ -82,7 +82,6 @@ public class practiseStreams {
 		System.out.println(map1);           // lambda instead of TreeMap::new  ----- () -> new TreeMap<>()
 		
 		// Q.no 16. Group by property
-		
 	}
 
 }

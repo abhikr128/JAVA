@@ -33,7 +33,7 @@ public class IntermediateOps {
 		System.out.println(Stream.iterate(1, x -> x + 1).skip(10).limit(1000).count());
 		
 		// 7. peek -> perform an action on each element as it is consumed
-		//Stream.iterate(1, x -> x + 1).skip(10).limit(100).peek(System.out::println).count();
+        // Stream.iterate(1, x -> x + 1).skip(10).limit(100).peek(System.out::println).count();
 		
 		// 8. flatMap
 		// Handles streams of collections, lists or arrays where each element is itself a collection.
