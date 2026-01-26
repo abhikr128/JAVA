@@ -1,8 +1,11 @@
+# Eclipse / Java
+bin/
+*.class
+
+# Optional (recommended)
+.settings/
 .project
 .classpath
-.settings/
-bin/
-/.gitignore
 /La_Stream/
 /Lambda/
 /Lec_1/
@@ -56,5 +59,11 @@ bin/
 /Rday3/
 /Rday4/
 /Rday5/
-/Stream_Exercise/
-/demo.class
+/asynchronousPro/
+/collectionFramework/
+/comparator/
+/la_Map/
+/la_thread/
+/stream_exercise/
+/stream_misc/
+/test/
