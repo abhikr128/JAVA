@@ -34,10 +34,10 @@ public class CompFutureDemo2 {
 		
         CompFutureDemo2 futureDemo2 = new CompFutureDemo2();
         
-        CompletableFuture<String> completableFutureFirstName = CompletableFuture.supplyAsync(() -> futureDemo2.getFirstName());
-        CompletableFuture<String> completableFutureLastName = CompletableFuture.supplyAsync(() -> futureDemo2.getLastName());
+        CompletableFuture<String> cfFirstName = CompletableFuture.supplyAsync(() -> futureDemo2.getFirstName());
+        CompletableFuture<String> cfLastName = CompletableFuture.supplyAsync(() -> futureDemo2.getLastName());
         
-        String finalOutput = completableFutureFirstName.thenCombine(completableFutureLastName, (str1, str2) -> str1 + " " + str2).join();
+        String finalOutput = cfFirstName.thenCombine(cfLastName, (str1, str2) -> str1 + " " + str2).join();
         
         System.out.println(finalOutput);
     

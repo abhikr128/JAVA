@@ -9,7 +9,7 @@ public class Student implements Serializable{
 	private String email;
 	
 	public Student() {
-		super();
+		
 	}
 
 	public Student(String name, int age, String email) {

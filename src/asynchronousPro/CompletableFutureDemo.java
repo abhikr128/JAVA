@@ -23,9 +23,10 @@ public class CompletableFutureDemo {
 		System.out.println("Main method : executed by: " + Thread.currentThread().getName());
 		CompletableFutureDemo completableFutureDemo = new CompletableFutureDemo();
 		
-		CompletableFuture.supplyAsync(() -> completableFutureDemo.getName())
+		CompletableFuture<Void> result = CompletableFuture.supplyAsync(() -> completableFutureDemo.getName())
 		                                             .thenApply(str -> str.toUpperCase())
 		                                             .thenAccept(str -> System.out.println(str));
+		result.join();
 		
 		System.out.println("Done...");
 
