@@ -17,9 +17,6 @@ public class LRUcashe<K, V> extends LinkedHashMap<K, V>{
 		return size() > capacity;
 	}
 
-
-
-
 	public static void main(String[] args) {
 		LRUcashe<String, Integer> studentMap = new LRUcashe<>(3);
 		studentMap.put("Ankita", 82);
